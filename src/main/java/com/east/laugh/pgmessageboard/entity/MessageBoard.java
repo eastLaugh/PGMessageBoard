@@ -11,6 +11,16 @@ public class MessageBoard {
     Time created_at;
     Integer father_id;
 
+    String openid;
+
+    public String getOpenid() {
+        return openid;
+    }
+
+    public void setOpenid(String openid) {
+        this.openid = openid;
+    }
+
     public Integer getFather_id() {
         return father_id;
     }

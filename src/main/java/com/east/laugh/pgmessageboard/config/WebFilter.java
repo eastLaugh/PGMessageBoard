@@ -17,5 +17,7 @@ public class WebFilter implements Filter {
         HttpServletResponse res = (HttpServletResponse) response;
         res.addHeader("Access-Control-Allow-Origin","*");
         chain.doFilter(request,response);
+
+        response.setContentType("application/json");
     }
 }
